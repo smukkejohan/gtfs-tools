@@ -103,6 +103,15 @@ module.exports = function routes(app){
     });
   });
     
+  app.get('/api/times/:agency/:stop_id', function(req, res){
+    var agency_key = req.params.agency
+      , route_id = req.params.route_id
+
+    gtfs.getTimesByStop(agency_key, route_id, stop_id, function(e, data){
+      res.send( data || {error: 'No times for agency/route/stop combination.'});
+    });
+  });
+
   //Nothing specified
   app.all('*', function notFound(req, res) {
     
