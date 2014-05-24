@@ -1,7 +1,12 @@
 var gtfs = require('gtfs');
 
 module.exports = function routes(app){
-  
+
+  app.get('/nearbyStops', function(req, res){
+    //res.sendfile("index");
+    res.render('index.jade', { title: 'My Site' });
+  });
+
   //AgencyList
   app.get('/api/agencies', function(req, res){
     gtfs.agencies(function(e, data){

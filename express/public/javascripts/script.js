@@ -2,8 +2,6 @@
 
 $(document).ready(function(){
 
-
-
   var map = L.map('map').setView([55.609842, 13.002763], 13);
   var markerGroup;
 
