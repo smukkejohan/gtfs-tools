@@ -1,0 +1,3 @@
+[submodule "gtfs"]
+	path = gtfs
+	url = git@github.com:HalfdanJ/node-gtfs.git
