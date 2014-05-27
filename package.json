@@ -1,5 +1,13 @@
 {
   "name": "gtfs-tools",
+  "contributors": [
+    { "name" : "Johan Bichel Lindegaard"
+    , "url" : "http://johan.cc/"
+    },
+    { "name" : "Jonas Jongejan"
+    , "url" : "http://halfdanj.dk/"
+    }
+  ],
   "dependencies": {
     "express": "= 3.2.x",
     "mongoose": "= 3.6.x",
@@ -8,12 +16,12 @@
     "async": "= 0.2.x",
     "request": "= 2.x.x",
     "underscore": "= 1.4.x",
-    "unzip": "= 0.1.x",
-    "gtfs": "latest"
+    "unzip": "= 0.1.x"
+//    "gtfs": "git://github.com/HalfdanJ/node-gtfs.git#master"
   },
   "keywords": [
     "transit",
     "gtfs",
     "transportation"
   ]
-}
+} 
